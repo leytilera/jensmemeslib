@@ -25,4 +25,8 @@ public class UserResponse extends Response {
     @Expose
     public User user;
 
+    public User toUser() {
+        return user;
+    }
+
 }

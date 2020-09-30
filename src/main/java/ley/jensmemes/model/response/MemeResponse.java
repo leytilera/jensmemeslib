@@ -23,23 +23,9 @@ public class MemeResponse  extends Response {
     }
 
     @Expose
-    public int id;
-
-    @Expose
-    public String link;
-
-    @Expose
-    public String category;
-
-    @Expose
-    public String user;
+    public Meme meme;
 
     public Meme toMeme() {
-        Meme meme = new Meme();
-        meme.id = id;
-        meme.link = link;
-        meme.category = category;
-        meme.user = user;
         return meme;
     }
 

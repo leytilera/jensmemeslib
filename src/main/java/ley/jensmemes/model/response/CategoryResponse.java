@@ -23,15 +23,9 @@ public class CategoryResponse extends Response {
     }
 
     @Expose
-    public String id;
-
-    @Expose
-    public String name;
+    public Category category;
 
     public Category toCategory() {
-        Category category = new Category();
-        category.id = id;
-        category.name = name;
         return category;
     }
 
